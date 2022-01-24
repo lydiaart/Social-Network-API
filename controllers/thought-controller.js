@@ -61,7 +61,7 @@ const thoughtController = {
                 res.json(dbUserData);
             })
             .catch(err => res.json(err));
-    }
+    },
     // remove reaction
     removeReaction({ params }, res) {
         Thought.findOneAndUpdate(
