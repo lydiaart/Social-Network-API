@@ -1,11 +1,13 @@
 const { Schema, model, Types } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
+const ReactionSchema = require('./ReactionSchema');
 
 const ThoughtSchema = new Schema({
     thoughtText: {
         type: String,
         required: true,
-        validate: [({ length }) => 1 <= length <= 280, "Text characters must be between 1 to 280."]
+        maxlength: 280,
+        minlength: 1
     },
     createdAt: {
         type: Date,
@@ -16,7 +18,7 @@ const ThoughtSchema = new Schema({
         type: String,
         required: true
     },
-    reactions: [reactionSchema]
+    reactions: [ReactionSchema]
 },
     {
         toJSON: {
@@ -31,6 +33,6 @@ ThoughtSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
-const Thought = model('Thought', ThoughtSchema);
+const Thought = model('thought', ThoughtSchema);
 
 module.exports = Thought;

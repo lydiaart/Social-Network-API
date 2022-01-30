@@ -8,6 +8,11 @@ const userController = {
             path: 'thoughts',
             select: '-__v'
         })
+        .populate({
+            path: 'friends',
+            select: '-__v'
+        })
+
         .select('-__v')
         .sort({_id: -1 })
         .then(dbUserData => res.json(dbUserData))
@@ -57,6 +62,20 @@ const userController = {
         User.findOneAndDelete({ _id: params.id })
         .then(dbUserData => res.json(dbUserData))
         .catch(err => res.json(err));
+    },
+
+    // add friend
+    async addFriend({ params  }, res) {
+        const user = await User.findOneAndUpdate({ _id: params.userId }, { $push: {friends: params.friendId} })
+
+        res.json(user)
+    },
+
+    // remove friend
+    async removeFriend({ params }, res) {
+        const user = await User.findOneAndUpdate({ _id: params.userId }, { $pull: { friends:  params.friendId }})
+
+        res.json(user)
     }
 };
 
