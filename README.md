@@ -5,7 +5,7 @@
  
 
 ## Description
-This is an application built with mongoDB. Users can share their thoughts, react to friend's thoughts and create a friend list throught API routes.
+This is an application built with mongoDB-a popular choice for unstructured/large data and speed. Users can share their thoughts, react to friend's thoughts and create a friend list throught API routes.
 
 
 
