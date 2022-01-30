@@ -37,19 +37,19 @@ This is an application built with mongoDB. Users can share their thoughts, react
 ## Usage 
 The following demonstrates the web application's appearance and functionality:
 
-Part 1: Users Routes
+Part 1: Users Routes</br>
 <img src="./imgage/Social-Network-API           Part 1--Users Routes.gif" width="400" height="" /></br>
 
 
-Part 2: Thoughts Routes a
+Part 2: Thoughts Routes a</br>
 <img src="./imgage/Social-Network-API           Part 2--Thoughts Routes-a.gif" width="400" height="" /></br>
-Part 2: Thoughts Routes b
-<img src="./imgage/Social-Network-API           Part 2--Thoughts Routes-b.gif" width="400" height="" />
+Part 2: Thoughts Routes b</br>
+<img src="./imgage/Social-Network-API           Part 2--Thoughts Routes-b.gif" width="400" height="" /></br>
 
 Please click the following links for better quality videos.</br>
 [Social-Network-API Part 1 Users Routes](https://watch.screencastify.com/v/SBWb66DdPrPz4i7BPiGp)</br>
 [Social-Network-API Part 2 Thoughts Routes-a](https://watch.screencastify.com/v/x6jsqN4MsDPc1cm8pQ0H)</br>
-[Social-Network-API Part 2 Thoughts Routes-b](https://watch.screencastify.com/v/kKMIlMuEGuM7lDkH3Q5H)
+[Social-Network-API Part 2 Thoughts Routes-b](https://watch.screencastify.com/v/kKMIlMuEGuM7lDkH3Q5H)</br>
 
 
 
