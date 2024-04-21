@@ -59,7 +59,7 @@ Please click the following links for better quality videos.</br>
 
 
 ## Credits
-  [Lydia Loy](https://github.com/flowingcityloy)<br/>
+  [Lydia L](https://github.com/flowingcityloy)<br/>
 
 
 
